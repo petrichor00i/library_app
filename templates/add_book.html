@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card p-4">
+    <h2 class="mb-4"><i class="fas fa-plus-circle"></i>Add New Book</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-lable">Title</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-lable">Author</label>
+            <input type="text" class="form-control" id="author" name="author" required>
+        </div>
+        <div class="mb-3">
+            <label for="year" class="form-lable">Publication Year</label>
+            <input type="number" class="form-control" id="year" name="year">
+        </div>
+        <div class="mb-3">
+            <label for="genre" class="form-lable">Genre</label>
+            <input type="text" class="form-control" id="genre" name="genre">
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Add book</button>
+    </form>
+</div>
+{% endblock %}

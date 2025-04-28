@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card p-4">
+    <h2 class="mb-4"><i class="fas fa-chart-bar"></i> Genre Report</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Genre</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for genre, count in report.items() %}
+            <tr>
+                <td>{{ genre }}</td>
+                <td>{{ count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
