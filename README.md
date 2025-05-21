@@ -13,7 +13,6 @@ A web-based application for managing books, built with **Python**, **Flask**, **
 - **Database**: MySQL
 - **Data Analysis**: Pandas
 - **Frontend**: Bootstrap, HTML, CSS
-- **Charting**: Chart.js (optional)
 
 ## Screenshots
 ![Home Page](screenshots/home.png)
